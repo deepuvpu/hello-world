@@ -18,9 +18,9 @@ public class FirstRepeat {
 		str = str.toUpperCase();
 		for(int i =0; i<str.length();i++) {
 			 char character =str.charAt(i);
-			int firstIndex = str.indexOf(character);
+			int  firstIndex = str.indexOf(character);
 			int lastIndex = str.lastIndexOf(character);
-			if(firstIndex == lastIndex) {
+			if(firstIndex != lastIndex) {
 				System.out.println("The character "+character);
 				break;
 			}
